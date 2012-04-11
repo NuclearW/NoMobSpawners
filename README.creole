@@ -1,0 +1,7 @@
+== NoMobSpawners
+
+NoMobSpawners removes mob spawners, or whatever you want to get rid of
+
+=== Compiling
+
+Maven 3 is required to compile NoMobSpawners
