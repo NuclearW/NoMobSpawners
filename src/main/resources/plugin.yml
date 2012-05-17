@@ -3,3 +3,4 @@ main: com.nuclearw.nomobspawners.NoMobSpawners
 version: ${project.version}
 author: NuclearW
 description: NoMobSpawners removes mob spawners, or whatever you want to get rid of
+load: STARTUP
