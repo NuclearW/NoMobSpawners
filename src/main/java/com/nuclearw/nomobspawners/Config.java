@@ -11,10 +11,17 @@ public class Config {
 			plugin.saveDefaultConfig();
 		}
 
-		String worldsStrip = plugin.getConfig().getString("rain-warning-msg");
+		String worldsStrip = plugin.getConfig().getString("active-worlds");
 
-		for(String world : worldsStrip.split(",")) {
+		if(worldsStrip == null || worldsStrip.isEmpty()) return;
+
+		String[] worldsSplit = worldsStrip.split(",");
+
+		if(worldsSplit.length == 0) return;
+
+		for(String world : worldsSplit) {
 			worlds.add(world);
+			plugin.getLogger().info("Added world: " + world);
 		}
 	}
 }
