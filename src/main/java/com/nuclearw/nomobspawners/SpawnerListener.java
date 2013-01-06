@@ -26,7 +26,7 @@ public class SpawnerListener implements Listener {
 				for(int y = location.getBlockY() - 3; y <= location.getBlockY() + 3; y++) {
 					if(world.getBlockTypeIdAt(x, y, z) != 52) continue;
 
-					world.getBlockAt(x, y, z).setTypeId(0);
+					plugin.remove.add(new Location(world, x, y, z));
 					break SCAN;
 				}
 			}
