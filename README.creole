@@ -1,6 +1,6 @@
 == NoMobSpawners
 
-NoMobSpawners removes mob spawners, or whatever you want to get rid of
+NoMobSpawners removes mob spawners
 
 === Compiling
 
